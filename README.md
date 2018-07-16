@@ -1,6 +1,6 @@
 # Basic RESTApi for PHP projects.
 
-This is a base-project os an REST Api using PHP. This is not a new Framework, this project use anothers good libraries and projects with Composer to get more small and reliable.
+This is a base-project of an REST Api using PHP. This is not a new Framework, this project use anothers good libraries and projects with Composer to get more small and reliable.
 
 # Features
 
@@ -8,6 +8,20 @@ This is a base-project os an REST Api using PHP. This is not a new Framework, th
 2. Easy to setup;
 3. Controller and Model based application;
 4. JWT Authorization (in comming);
+
+# Install
+
+1. Clone or download this repository
+2. Execute `composer install`
+3. Setup your database connection on public/index.php
+4. Create your controllers and models in app/Controllers and app/Models
+5. Create the routes of your API in app/loader.php reffering to your controllers.
+
+# Documentation
+
+1. Routes: [Nezamy Router](https://nezamy.com)
+2. Database ORM: [Phormium ORM](http://phormium.readthedocs.io/en/latest/index.html)
+3. JWT: (in comming)
 
 # The MIT License (MIT)
 
