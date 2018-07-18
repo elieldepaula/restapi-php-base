@@ -2,6 +2,11 @@
 
 namespace App\Controllers;
 
+/**
+ * Base controller class.
+ *
+ * @author Eliel de Paula <elieldepaula@gmail.com>
+ */
 class BaseController
 {
     
@@ -21,7 +26,7 @@ class BaseController
      * 
      * @param string $var
      * @param bool $xss_clean
-     * @return string
+     * @return mixed
      */
     public function input($var, $xss_clean = TRUE)
     {

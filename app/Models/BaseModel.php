@@ -3,11 +3,19 @@
 namespace App\Models;
 use Phormium\Model;
 
+/**
+ * Base model class.
+ *
+ * @author Eliel de Paula <elieldepaula@gmail.com>
+ */
 class BaseModel extends Model
 {
+    
     function __construct()
     {
-        //echo BASE_PATH . 'database.json';
-        //Phormium\DB::configure(BASE_PATH . 'database.json');
+        
     }
+    
+    // Coming soon...
+    
 }

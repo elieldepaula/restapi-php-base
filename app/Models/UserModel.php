@@ -2,12 +2,17 @@
 
 namespace App\Models;
 
-class User extends BaseModel
+/**
+ * BaseModel class.
+ *
+ * @author Eliel de Paula <elieldepaula@gmail.com>
+ */
+class UserModel extends BaseModel
 {
 
     // Mapping meta-data
     protected static $_meta = array(
-        'database' => 'db1',
+        'database' => ENVIRONMENT,
         'table' => 'users',
         'pk' => 'id'
     );
