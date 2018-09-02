@@ -10,7 +10,7 @@ define('ENVIRONMENT', 'development');
 
 define('DS', DIRECTORY_SEPARATOR, TRUE);
 define('BASE_PATH', __DIR__ . DS . '..' . DS, TRUE);
-    
+
 // Show errors
 //===================================
 
@@ -31,20 +31,28 @@ switch (ENVIRONMENT) {
 // Database
 //===================================
 
-define('DATABASE', [
-    "databases" => [
-        "development" => [
-            "dsn" => "mysql:host=localhost;dbname=restapi-teste",
-            "username" => "root",
-            "password" => "root"
-        ],
-        "production" => [
-            "dsn" => "mysql:host=localhost;dbname=restapi-teste",
-            "username" => "root",
-            "password" => "root"
-        ]
-    ]
-]);
+define('DATABASE', array(
+    'development' => array(
+       'driver'    => 'mysql',
+       'host'      => 'localhost',
+       'database'  => 'lojanuvem',
+       'username'  => 'root',
+       'password'  => 'root',
+       'charset'   => 'utf8',
+       'collation' => 'utf8_general_ci',
+       'prefix'    => ''
+    ),
+    'production' => array(
+       'driver'    => 'mysql',
+       'host'      => 'localhost',
+       'database'  => '',
+       'username'  => '',
+       'password'  => '',
+       'charset'   => 'utf8',
+       'collation' => 'utf8_general_ci',
+       'prefix'    => ''
+    )
+));
 
 // Loader
 //===================================

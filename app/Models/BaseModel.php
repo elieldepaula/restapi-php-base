@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-use Phormium\Model;
+use Illuminate\Database\Eloquent\Model;
 
 /**
  * Base model class.
@@ -10,12 +10,12 @@ use Phormium\Model;
  */
 class BaseModel extends Model
 {
-    
+
     function __construct()
     {
-        
+
     }
-    
+
     // Coming soon...
-    
+
 }

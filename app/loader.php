@@ -2,7 +2,14 @@
 
 require BASE_PATH . 'vendor/autoload.php';
 
-Phormium\DB::configure(DATABASE);
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+// Eloquent
+//===================================
+$capsule = new Capsule;
+$capsule->addConnection(DATABASE[ENVIRONMENT]);
+$capsule->setAsGlobal();
+$capsule->bootEloquent();
 
 // App
 //===================================

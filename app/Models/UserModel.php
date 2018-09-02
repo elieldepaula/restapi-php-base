@@ -10,17 +10,6 @@ namespace App\Models;
 class UserModel extends BaseModel
 {
 
-    // Mapping meta-data
-    protected static $_meta = array(
-        'database' => ENVIRONMENT,
-        'table' => 'users',
-        'pk' => 'id'
-    );
+    public $table = "users";
 
-    // Table columns
-    public $id;
-    public $name;
-    public $email;
-    public $password;
-    
 }

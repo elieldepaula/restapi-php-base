@@ -1,11 +1,12 @@
 {
-    "name": "eliel/estudo",
-    "description": "Estudo sobre uso de namespaces com composer.",
+    "name": "elieldepaula/restapi-php-base
+",
+    "description": "Base project of an REST API using PHP.",
     "require": {
         "php": ">=5.5.0",
         "monolog/monolog": "^1.17",
         "nezamy/route": "^1.2.2",
-        "phormium/phormium": "0.*"
+        "illuminate/database": "5.*"
     },
     "autoload": {
         "psr-4": {
