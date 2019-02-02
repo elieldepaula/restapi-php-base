@@ -1,6 +1,5 @@
 {
-    "name": "elieldepaula/restapi-php-base
-",
+    "name": "elieldepaula/restapi-php-base",
     "description": "Base project of an REST API using PHP.",
     "require": {
         "php": ">=5.5.0",
