@@ -5,6 +5,8 @@ namespace App\Controllers;
 /**
  * LogonController class.
  *
+ * NOTA: Este controller é um exemplo.
+ *
  * @author Eliel de Paula <elieldepaula@gmail.com>
  */
 class LogonController extends BaseController
